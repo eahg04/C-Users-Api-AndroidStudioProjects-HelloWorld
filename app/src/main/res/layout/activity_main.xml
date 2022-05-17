@@ -10,23 +10,67 @@
     android:theme="@style/AppTheme"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/email"
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="94dp"
+        android:src="@drawable/image"
+        android:layout_marginBottom="80dp"
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/sexo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="15sp"
+        android:hint="indique su genero"
+        android:textSize="20sp" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/idRadio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Femenino"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/idRadio2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Masculino"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/idspnElementos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lenguaje de Preferencia"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="Nombre"
         android:inputType="textEmailAddress"
+        android:textSize="20sp"
         android:theme="@style/AppTheme" />
 
     <EditText
-        android:id="@+id/editTextPhone2"
-        style="@style/Widget.AppCompat.EditText"
+        android:id="@+id/phone"
+        style="@style/Widget.AppTheme.EditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Telefono"
         android:inputType="phone"
+        android:textSize="20sp"
         android:theme="@style/AppTheme.Form" />
 
     <EditText
@@ -35,11 +79,14 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Pasword"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textSize="20sp"/>
 
     <Button
         android:id="@+id/send"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ENVIAR" />
+        android:layout_height="44dp"
+        android:layout_marginTop="15dp"
+        android:text="GUARDAR" />
+
 </LinearLayout>
